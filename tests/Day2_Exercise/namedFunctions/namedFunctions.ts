@@ -1,4 +1,4 @@
-// Write a named function to convert a temperature from Celsius to Fahrenheit.
+// 1. Write a named function to convert a temperature from Celsius to Fahrenheit.
 
 function convertCelsiusToFahrenheit(celsius: number): number {
     const fahrenheit = (celsius * 9/5) + 32;
@@ -11,7 +11,7 @@ function convertCelsiusToFahrenheit(celsius: number): number {
   
   console.log("----------------------------------------------");
   
-  // Create a named function that finds the factorial of a number.
+  // 2. Create a named function that finds the factorial of a number.
   
   function calculateFactorialOfANumber (input:number) : number {
   for (let i = 1; i <= input; i++) {
@@ -27,7 +27,7 @@ function convertCelsiusToFahrenheit(celsius: number): number {
   
   console.log("----------------------------------------------");
   
-  // Implement a named function that checks if a given string contains vowels.
+  // 3. Implement a named function that checks if a given string contains vowels.
   
   function containsVowels(input: string): boolean {
     let convertedString:string = input.toLowerCase(); // converting the string to lowercase
@@ -46,7 +46,7 @@ function convertCelsiusToFahrenheit(celsius: number): number {
   
   console.log("----------------------------------------------");
   
-  // Write a named function to determine if a given year is a leap year.
+  // 4. Write a named function to determine if a given year is a leap year.
   
   function isLeapYear(year: number): string {
       if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
@@ -61,9 +61,9 @@ function convertCelsiusToFahrenheit(celsius: number): number {
   
   console.log("----------------------------------------------");
   
-  // Create a named function that returns the greatest common divisor (GCD) of two numbers.
+  // 5. Create a named function that returns the greatest common divisor (GCD) of two numbers.
   
-  function findGCDOfTwonumbers(a: number, b: number): number {
+  function findGCDOfTwoNumbers(a: number, b: number): number {
     while (b !== 0) {
       const temp = b;
       b = a % b;
@@ -75,4 +75,4 @@ function convertCelsiusToFahrenheit(celsius: number): number {
   
   let a:number = 5;
   let b:number = 15;
-  console.log(`GCD of ${a} and ${b} is ${findGCDOfTwonumbers(a, b)}`);
+  console.log(`GCD of ${a} and ${b} is ${findGCDOfTwoNumbers(a, b)}`);

@@ -1,4 +1,4 @@
-// Write a program to check if a given number is odd or even.
+// 1. Write a program to check if a given number is odd or even.
 var num = 21;
 if (num % 2 === 0) {
     console.log("".concat(num, " is an even number"));
@@ -7,17 +7,20 @@ else {
     console.log("".concat(num, " is an odd number"));
 }
 console.log("----------------------------------------------");
-// Create a function that takes a grade and returns whether it is "Pass" or "Fail" based on a threshold value.
+// 2. Create a function that takes a grade and returns whether it is "Pass" or "Fail" based on a threshold value.
 var threshold = 35;
-var grade = 5;
-if (grade >= threshold) {
-    console.log(" Congratulations , ".concat(grade, " is a PASS mark !!!"));
+function checkGrade(grade, threshold) {
+    if (grade >= threshold) {
+        return "Congratulations , ".concat(grade, " is a PASS mark !!!");
+    }
+    else {
+        return "Sorry , ".concat(grade, " is a FAIL mark");
+    }
 }
-else {
-    console.log("Sorry ".concat(grade, " is a FAIL mark"));
-}
+console.log(checkGrade(55, threshold)); // pass mark
+console.log(checkGrade(20, threshold)); // fail mark
 console.log("----------------------------------------------");
-// Write a program to determine the type of triangle (equilateral, isosceles, or scalene) based on its sides.
+// 3. Write a program to determine the type of triangle (equilateral, isosceles, or scalene) based on its sides.
 function determineTriangleType(a, b, c) {
     // First checking it is a valid triangle or not , if it is an invalid triangle means , the execution will be completed on the first if condition itself. 
     if (a + b <= c || b + c <= a || c + a <= b) {
@@ -39,7 +42,7 @@ console.log(determineTriangleType(8, 8, 8)); // Equilateral Triangle
 console.log(determineTriangleType(7, 7, 4)); // Isosceles triangle
 console.log(determineTriangleType(7, 8, 9)); // Scalene triangle
 console.log("----------------------------------------------");
-// Implement a program to check if a string is a palindrome or not.
+// 4. Implement a program to check if a string is a palindrome or not.
 function isPalindrome(value) {
     var reversedString;
     reversedString = value.split("").reverse().join(""); // converting the string to array , then reversing the array , again converting that reversed array to string
@@ -54,7 +57,7 @@ function isPalindrome(value) {
 console.log(isPalindrome("raceCAR")); // palindrome string
 console.log(isPalindrome("adam")); // Not a palindrome string
 console.log("----------------------------------------------");
-// Write a program that checks if a given year is a leap year.
+// 5. Write a program that checks if a given year is a leap year.
 function isLeapYear(year) {
     if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
         return "".concat(year, " is a Leap year");

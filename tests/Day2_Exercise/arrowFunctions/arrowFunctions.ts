@@ -1,12 +1,12 @@
-// Write an arrow function to find the square of a number.
+// 1. Write an arrow function to find the square of a number.
 
-const squareOfNumbers = (num: number): number => num * num;
+const squareOfANumber = (num: number): number => num * num;
 let input: number = 5;
-console.log(`Suquare of ${input} is ${squareOfNumbers(input)} `);
+console.log(`Suquare of ${input} is ${squareOfANumber(input)} `);
 
 console.log("----------------------------------------------");
 
-// Create an arrow function that filters out even numbers from an array.
+// 2. Create an arrow function that filters out even numbers from an array.
 
 const filtersEvenNumbers = (arr: number[]): number[] => arr.filter((num) => num % 2 === 0)
 
@@ -15,7 +15,7 @@ console.log(`Even numbers in the array : ${filtersEvenNumbers(arr)}`);
 
 console.log("----------------------------------------------");
 
-// Implement an arrow function that calculates the average of a list of numbers.
+// 3. Implement an arrow function that calculates the average of a list of numbers.
 
 let scores: number[] = [1, 2, 3, 4, 5];
 const averageOfNumbers = (scores: number[]): number => {
@@ -26,16 +26,16 @@ console.log(`Average of the given array is ${averageOfNumbers(scores)}`);
 
 console.log("----------------------------------------------");
 
-// Write an arrow function to return the length of the longest string in an array.
+// 4. Write an arrow function to return the length of the longest string in an array.
 
 let stringArray: string[] = ["Selenium", "Cypress", "PlayWright"];
 
 const calculateLengthOfLongestString = (stringArray: string[]): number => {
-    let lengthOfEachstring: number[] = []; // creating an empty number arry to store each length of the string in an string array
+    let lengthOfEachString: number[] = []; // creating an empty number arry to store each length of the string in an string array
     for (let i = 0; i < stringArray.length; i++) {
-        lengthOfEachstring.push(stringArray[i].length);
+        lengthOfEachString.push(stringArray[i].length);
     }
-    return Math.max.apply(0, lengthOfEachstring); // returns the maximum number in the array;
+    return Math.max.apply(0, lengthOfEachString); // returns the maximum number in the array;
 }
 
 console.log(`Length of the longest string is: ${calculateLengthOfLongestString(stringArray)}`);
@@ -43,7 +43,7 @@ console.log(`Length of the longest string is: ${calculateLengthOfLongestString(s
 console.log("----------------------------------------------");
 
 
-// Use an arrow function to map over an array and return each number squared.
+// 5. Use an arrow function to map over an array and return each number squared.
 
 let numArray: number[] = [1, 2, 3, 4, 5];
 

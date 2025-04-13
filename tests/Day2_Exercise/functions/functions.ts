@@ -1,4 +1,4 @@
-// Write a function that calculates the area of a circle given its radius.
+// 1. Write a function that calculates the area of a circle given its radius.
 
 function calculateAreaOfACircle(radius: number): number {
     const area = Math.PI * Math.pow(radius, 2);
@@ -10,7 +10,7 @@ console.log(`Area of the circle having radius ${radius} is ${calculateAreaOfACir
 
 console.log("-----------------------------");
 
-// Create a function to check if a number is positive, negative, or zero.
+// 2. Create a function to check if a number is positive, negative, or zero.
 
 function checkNumberType(num: number): string {
     if (num > 0) {
@@ -28,7 +28,7 @@ console.log(checkNumberType(0)); //  0
 
 console.log("-----------------------------");
 
-// Write a function that takes an array of numbers and returns the sum of all the numbers.
+// 3. Write a function that takes an array of numbers and returns the sum of all the numbers.
 
 let scores: number[] = [10, 20, 30];
 let sum: number = 0;
@@ -40,7 +40,7 @@ console.log(`Sum of the given scores array is ${sum}`);
 
 console.log("-----------------------------");
 
-// Implement a function to find the maximum value in an array.
+// 4. Implement a function to find the maximum value in an array.
 
 function findMaxValue(numbers: number[]): number {
 
@@ -59,7 +59,7 @@ console.log(`The maximum value in the given array is: ${findMaxValue(values)}`);
 
 console.log("-----------------------------");
 
-// Create a function that reverses the words in a given sentence.
+// 5. Create a function that reverses the words in a given sentence.
 
 function reverseWordsInASentence(sentence: string): string {
     return sentence.split(" ").reverse().join(" ");

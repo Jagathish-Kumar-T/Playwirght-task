@@ -1,4 +1,4 @@
-// Write a program to check if a given number is odd or even.
+// 1. Write a program to check if a given number is odd or even.
 
 let num: number = 21;
 
@@ -11,21 +11,24 @@ else {
 
 console.log("----------------------------------------------");
 
-// Create a function that takes a grade and returns whether it is "Pass" or "Fail" based on a threshold value.
+// 2. Create a function that takes a grade and returns whether it is "Pass" or "Fail" based on a threshold value.
 
 let threshold: number = 35;
-let grade: number = 5;
+function checkGrade(grade: number, threshold: number): string {
+    if (grade >= threshold) {
+        return `Congratulations , ${grade} is a PASS mark !!!`;
+    }
+    else {
+        return `Sorry , ${grade} is a FAIL mark`;
+    }
+}
+console.log(checkGrade(55, threshold)); // pass mark
+console.log(checkGrade(20, threshold)); // fail mark
 
-if (grade >= threshold) {
-    console.log(` Congratulations , ${grade} is a PASS mark !!!`);
-}
-else {
-    console.log(`Sorry ${grade} is a FAIL mark`);
-}
 
 console.log("----------------------------------------------");
 
-// Write a program to determine the type of triangle (equilateral, isosceles, or scalene) based on its sides.
+// 3. Write a program to determine the type of triangle (equilateral, isosceles, or scalene) based on its sides.
 
 function determineTriangleType(a: number, b: number, c: number): string {
 
@@ -58,7 +61,7 @@ console.log(determineTriangleType(7, 8, 9)); // Scalene triangle
 
 console.log("----------------------------------------------");
 
-// Implement a program to check if a string is a palindrome or not.
+// 4. Implement a program to check if a string is a palindrome or not.
 
 function isPalindrome(value: string): string {
     let reversedString: string;
@@ -76,7 +79,7 @@ console.log(isPalindrome("adam")); // Not a palindrome string
 
 console.log("----------------------------------------------");
 
-// Write a program that checks if a given year is a leap year.
+// 5. Write a program that checks if a given year is a leap year.
 
 function isLeapYear(year: number): string {
     if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
