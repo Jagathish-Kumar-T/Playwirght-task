@@ -1,4 +1,4 @@
-//Answer 1 
+// Write a program to print the first 10 numbers in the Fibonacci sequence.
 var num = 10;
 var firstNumber = 0, secondNumber = 1, thirdNumber;
 var count;
@@ -17,7 +17,7 @@ for (var i = 1; i <= num; i++) {
     secondNumber = thirdNumber;
 }
 console.log("----------------------------------------------");
-//Answer : 2
+// Create a program that prints all prime numbers between 1 and 100.
 function isPrimeNumber(num1) {
     for (var i = 2; i <= Math.sqrt(num1); i++) {
         if (num1 % i === 0) {
@@ -33,7 +33,7 @@ for (var i = 2; i <= limit; i++) // Starting the iteration from 2 , because 1 is
         console.log("".concat(i, " is a prime number"));
 }
 console.log("----------------------------------------------");
-// Answer : 3
+// Write a program to reverse a string using a loop.
 var fullname = "JagathishKumar";
 var reversedString = "";
 var lastIndex = (fullname.length) - 1; // identifying the last index of the string
@@ -41,9 +41,9 @@ while (lastIndex >= 0) {
     reversedString = reversedString + fullname[lastIndex];
     lastIndex--; // decrementing the index value from in descending order untill the index 0
 }
-console.log("Reversed string value of the string ".concat(fullname, " is ").concat(reversedString));
+console.log("Reversed string value of the given string ".concat(fullname, " is ").concat(reversedString));
 console.log("----------------------------------------------");
-// Answer : 4
+// Implement a program to calculate the factorial of a given number using a loop.
 var calculateFactorial = 10;
 var factorial = 1;
 for (var i = 1; i <= calculateFactorial; i++) {
@@ -51,7 +51,7 @@ for (var i = 1; i <= calculateFactorial; i++) {
 }
 console.log("Factorial of ".concat(calculateFactorial, " is ").concat(factorial));
 console.log("----------------------------------------------");
-// Answer : 5
+// Write a program to generate a multiplication table for numbers 1 to 10.
 var tableLimit = 10;
 function printMultiplicationTable(tableLimit) {
     for (var i = 1; i <= tableLimit; i++) {

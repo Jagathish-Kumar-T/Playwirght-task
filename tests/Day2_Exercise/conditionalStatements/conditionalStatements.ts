@@ -1,4 +1,4 @@
-// //Answer 1 :
+// Write a program to check if a given number is odd or even.
 
 let num: number = 21;
 
@@ -11,7 +11,7 @@ else {
 
 console.log("----------------------------------------------");
 
-// //Answer 2 :
+// Create a function that takes a grade and returns whether it is "Pass" or "Fail" based on a threshold value.
 
 let threshold: number = 35;
 let grade: number = 5;
@@ -25,7 +25,7 @@ else {
 
 console.log("----------------------------------------------");
 
-//Answer 3 :
+// Write a program to determine the type of triangle (equilateral, isosceles, or scalene) based on its sides.
 
 function determineTriangleType(a: number, b: number, c: number): string {
 
@@ -58,7 +58,7 @@ console.log(determineTriangleType(7, 8, 9)); // Scalene triangle
 
 console.log("----------------------------------------------");
 
-// Answer : 4
+// Implement a program to check if a string is a palindrome or not.
 
 function isPalindrome(value: string): string {
     let reversedString: string;
@@ -76,7 +76,7 @@ console.log(isPalindrome("adam")); // Not a palindrome string
 
 console.log("----------------------------------------------");
 
-// Answer : 5
+// Write a program that checks if a given year is a leap year.
 
 function isLeapYear(year: number): string {
     if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {

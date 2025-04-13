@@ -1,5 +1,5 @@
 
-//Answer 1 
+// Write a program to print the first 10 numbers in the Fibonacci sequence.
 
 let num: number = 10;
 let firstNumber: number = 0, secondNumber: number = 1, thirdNumber;
@@ -25,7 +25,7 @@ for (let i = 1; i <= num; i++) {
 
 console.log("----------------------------------------------");
 
-//Answer : 2
+// Create a program that prints all prime numbers between 1 and 100.
 
 function isPrimeNumber(num1: number): boolean {
     for (let i = 2; i <= Math.sqrt(num1); i++) {
@@ -49,7 +49,7 @@ for (let i = 2; i <= limit; i++) // Starting the iteration from 2 , because 1 is
 
 console.log("----------------------------------------------");
 
-// Answer : 3
+// Write a program to reverse a string using a loop.
 
 let fullname: string = "JagathishKumar";
 let reversedString: string = "";
@@ -63,7 +63,7 @@ console.log(`Reversed string value of the given string ${fullname} is ${reversed
 
 console.log("----------------------------------------------");
 
-// Answer : 4
+// Implement a program to calculate the factorial of a given number using a loop.
 
 let calculateFactorial: number = 10;
 let factorial: number = 1;
@@ -74,7 +74,7 @@ console.log(`Factorial of ${calculateFactorial} is ${factorial}`);
 
 console.log("----------------------------------------------");
 
-// Answer : 5
+// Write a program to generate a multiplication table for numbers 1 to 10.
 
 let tableLimit: number = 10;
 function printMultiplicationTable(tableLimit: number): void {

@@ -3,6 +3,7 @@
 const squareOfNumbers = (num: number): number => num * num;
 let input: number = 5;
 console.log(`Suquare of ${input} is ${squareOfNumbers(input)} `);
+
 console.log("----------------------------------------------");
 
 // Create an arrow function that filters out even numbers from an array.
