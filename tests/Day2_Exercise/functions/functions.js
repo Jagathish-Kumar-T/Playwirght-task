@@ -25,10 +25,14 @@ console.log("-----------------------------");
 // 3. Write a function that takes an array of numbers and returns the sum of all the numbers.
 var scores = [10, 20, 30];
 var sum = 0;
-for (var i = 0; i < scores.length; i++) {
-    sum = sum + scores[i];
+function sumOfAllNumbers(scores) {
+    for (var i = 0; i < scores.length; i++) {
+        sum = sum + scores[i];
+    }
+    return sum;
 }
-console.log("Sum of the given scores array is ".concat(sum));
+sumOfAllNumbers(scores);
+console.log("Sum of the given array is ".concat(sum));
 console.log("-----------------------------");
 // 4. Implement a function to find the maximum value in an array.
 function findMaxValue(numbers) {
