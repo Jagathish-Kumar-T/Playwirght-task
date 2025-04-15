@@ -33,15 +33,13 @@ console.log("-----------------------------");
 let scores: number[] = [10, 20, 30];
 let sum: number = 0;
 
-function sumOfAllNumbers(scores:number[]) : number
-{
+function sumOfAllNumbers(scores: number[]): number {
     for (let i = 0; i < scores.length; i++) {
         sum = sum + scores[i];
     }
-return sum;
+    return sum;
 }
-sumOfAllNumbers(scores);
-console.log(`Sum of the given array is ${sum}`);
+console.log(`Sum of the given array is ${sumOfAllNumbers(scores)}`);
 
 console.log("-----------------------------");
 

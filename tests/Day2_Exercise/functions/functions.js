@@ -31,8 +31,7 @@ function sumOfAllNumbers(scores) {
     }
     return sum;
 }
-sumOfAllNumbers(scores);
-console.log("Sum of the given array is ".concat(sum));
+console.log("Sum of the given array is ".concat(sumOfAllNumbers(scores)));
 console.log("-----------------------------");
 // 4. Implement a function to find the maximum value in an array.
 function findMaxValue(numbers) {
